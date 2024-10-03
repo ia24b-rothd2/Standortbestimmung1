@@ -23,7 +23,6 @@ public class ToDoListe {
                 case 4:
                     delete();
                     break;
-
                 case 5:
                     isrunning = false;
                     break;
@@ -52,17 +51,13 @@ public class ToDoListe {
         }
     }
 
-
     public static void umbenennen(String[] aufgaben) {
         System.out.println("Welche Aufgabe möchtest du bearbeiten?");
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
-
         scan.nextLine();
-
         System.out.println("Was soll die neue Aufgabe sein?");
         String neueAufgabe = scan.nextLine();
-
         aufgaben[i - 1] = neueAufgabe;
     }
 

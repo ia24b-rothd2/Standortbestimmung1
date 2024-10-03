@@ -35,7 +35,6 @@ class ToDoListeTest {
     }
 
 
-
     @Test
     void testumbenennen() {
         ToDoListe.aufgabe[0] = "Alte Aufgabe";
@@ -56,7 +55,6 @@ class ToDoListeTest {
         ToDoListe.delete();
         //Das habe ich teilweise mit Chat GPT erstellt, da ich nicht wusste, wie man eine User Eingabe simuliert
         assertNull(ToDoListe.aufgabe[0], "Die Aufgabe sollte gelöscht worden sein.");
-        System.setIn(System.in);
     }
 }
 
